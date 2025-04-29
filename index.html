@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deepak Kumar Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="main">
+      <img src="your-photo.jpg" alt="Deepak Kumar" class="profile-photo">
+      <h1>Deepak Kumar</h1>
+      <p>📞 +91 7739413242 | 📧 dk756396@gmail.com</p>
+      <p>
+        <a href="https://www.linkedin.com/in/deepak-kumar-59ab10255/" target="_blank">LinkedIn</a> | 
+        <a href="#">GitHub</a> | 
+        <a href="#">LeetCode</a>
+      </p>
+      <a href="DeepakCVV.pdf" class="cv-button" target="_blank">Open CV</a>
+    </div>
+  </header>
+
+  <!-- Buttons to toggle each section -->
+  <button class="toggle-btn" onclick="toggleSection('about')">About</button>
+  <section id="about" class="content-section hidden">
+    <h2>About Me</h2>
+    <p>Hello! I’m Deepak Kumar, a passionate Computer Science Engineering (CSE) student at Lovely Professional University. 
+    I enjoy building web projects and solving coding problems. I am continuously learning and enhancing my skills 
+    in programming, web development, and data structures. I aim to become a skilled software developer and contribute to impactful projects.</p>
+  </section>
+
+  <button class="toggle-btn" onclick="toggleSection('skills')">Skills</button>
+  <section id="skills" class="content-section hidden">
+    <h2>Skill Summary</h2>
+    <ul>
+      <li><strong>Languages:</strong> C++, JavaScript</li>
+      <li><strong>Web:</strong> HTML, CSS</li>
+      <li><strong>Tools:</strong> MySQL, VS Code, Git, GitHub</li>
+      <li><strong>Soft Skills:</strong> Problem Solving, Teamwork, Event Handling, Time Management</li>
+    </ul>
+  </section>
+
+  <button class="toggle-btn" onclick="toggleSection('education')">Education</button>
+  <section id="education" class="content-section hidden">
+    <h2>Education</h2>
+    <p><strong>B.Tech in CSE</strong><br>Lovely Professional University, Phagwara<br>CGPA: 6.5 (2022–2026)</p>
+    <p><strong>Class 12th</strong><br>Shanti Niketan Sr. Secondary School<br>Percentage: 70% (2021–2022)</p>
+  </section>
+
+  <button class="toggle-btn" onclick="toggleSection('projects')">Projects</button>
+  <section id="projects" class="content-section hidden">
+    <h2>Projects</h2>
+    <h3>To-Do List App (Mar 2025)</h3>
+    <ul>
+      <li>Built with HTML, CSS, JavaScript</li>
+      <li>Features: Add, delete, mark complete using DOM manipulation</li>
+      <li>Responsive and interactive interface</li>
+    </ul>
+    <h3>E-Grocery Website (Apr 2025)</h3>
+    <ul>
+      <li>Built a responsive e-commerce grocery website</li>
+      <li>Clean UI using HTML, CSS – included product pages, banners</li>
+    </ul>
+  </section>
+
+  <button class="toggle-btn" onclick="toggleSection('certifications')">Certifications</button>
+  <section id="certifications" class="content-section hidden">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Competitive Programming at Cipher School (May–Jul 2024)</li>
+      <li>DSA Certification from Linux Socials & LPU</li>
+      <li>Built Library Management System in C++</li>
+    </ul>
+  </section>
+
+  <button class="toggle-btn" onclick="toggleSection('achievements')">Achievements</button>
+  <section id="achievements" class="content-section hidden">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Solved 100+ LeetCode problems</li>
+      <li>50+ DSA problems on GeeksForGeeks</li>
+      <li>2-Star on HackerRank (Python, SQL, C++)</li>
+    </ul>
+  </section>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle('hidden');
+      section.classList.toggle('fade-in');
+    }
+  </script>
+
+</body>
+</html>
